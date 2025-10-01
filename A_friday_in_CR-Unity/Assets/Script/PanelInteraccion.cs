@@ -8,6 +8,7 @@ public class PanelInteraccion : MonoBehaviour
     public GameObject panelNumpadUI;          // Canvas del numpad
     public Text displayCodigo;                // Donde se muestra el código digitado
     public Light luzPrincipal;                // Luz que enciende el mapa
+    //public GameObject Panel;
 
     private bool jugadorCerca = false;
     private string codigoIngresado = "";
@@ -34,7 +35,7 @@ public class PanelInteraccion : MonoBehaviour
         mensajeInteractuarUI.SetActive(false);
 
         // Bloquear el movimiento del jugador si querés
-        Time.timeScale = 0f;
+      //  Time.timeScale = 0f;
     }
 
     public void AgregarNumero(string numero)
@@ -72,7 +73,7 @@ public class PanelInteraccion : MonoBehaviour
     private void CerrarPanel()
     {
         panelNumpadUI.SetActive(false);
-        Time.timeScale = 1f;
+       // Time.timeScale = 1f;
     }
 
     private void OnTriggerEnter(Collider other)
