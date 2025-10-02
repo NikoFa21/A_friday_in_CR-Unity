@@ -61,6 +61,7 @@ public class PanelInteraccion : MonoBehaviour
         if (codigoIngresado == codigoCorrecto)
         {
             luzPrincipal.enabled = true; // enciende la luz del mapa
+            FindObjectOfType<MissionManager>().LlegoAlPanelElectrico();
             CerrarPanel();
         }
         else

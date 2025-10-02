@@ -46,6 +46,7 @@ public class LinternaPickup : MonoBehaviour
 
         // Ocultar el tutorial después de 5 segundos
         Invoke(nameof(EsconderTutorial), 5f);
+        FindObjectOfType<MissionManager>().LlegoALinterna();
     }
 
     private void EsconderTutorial()
